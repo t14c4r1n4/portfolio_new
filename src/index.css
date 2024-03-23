@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'Breve';
+    src: url('./assets/fonts/BreveSc-a1zR.ttf');
+}
+
+@font-face {
+    font-family: 'Orbitron';
+    src: url('./assets/fonts/Orbitron-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: 'Lixdu';
+    src: url('./assets/fonts/Lixdu-p7Pn1.ttf');
+}
+
+@font-face {
+    font-family: 'ProPixie';
+    src: url('./assets/fonts/ProcrastinatingPixie-WyVOO.ttf');
+}
+
+@keyframes progress {
+    from {
+        transform: scaleX(0);
+    }
+
+    to {
+        transform: scaleX(1);
+    }
+}
+
+@layer utilities {
+    .clip-circle {
+        clip-path: circle(50% at 50% 50%);
+    }
+
+    .clip-triangle {
+        clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    }
+
+    .glass {
+        background: rgba(255, 255, 255, 0.05);
+        /* border-radius: 16px; */
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(6.8px);
+        -webkit-backdrop-filter: blur(6.8px);
+    }
+
+    .text-gradient {
+        background: #04A56A;
+        background: linear-gradient(to left, #04A56A 0%, #FF00D6 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .progress {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        transform-origin: left center;
+        background-color: lightgrey;
+        animation: linear progress forwards;
+        animation-timeline: scroll(root block);
+    }
+}
