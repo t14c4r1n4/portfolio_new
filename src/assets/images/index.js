@@ -40,6 +40,7 @@ import db from './companies/db.svg'
 import background from './others/background.png'
 import bg from './bg.svg'
 import bg_concrete from './bg_concrete.jpg'
+import hue_bg from './hue_bg.jpg'
 
 // me
 import me from './others/me.png'
@@ -77,7 +78,8 @@ export {
     me,
     me_circle,
     db,
-    bg
+    bg, 
+    hue_bg
 }
 
 export default bg;

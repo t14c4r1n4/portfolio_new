@@ -67,4 +67,42 @@
         animation: linear progress forwards;
         animation-timeline: scroll(root block);
     }
+
+    .hue-bg {
+        background: #8A2387;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #F27121, #E94057, #8A2387);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #F27121, #E94057, #8A2387);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+
+    .hue-txt {
+        color: linear-gradient(to right, #F27121, #E94057, #8A2387)
+    }
+
+    .gradient_2 {
+        background-color: #00DBDE;
+        background-image: linear-gradient(27deg, #00DBDE 0%, #FC00FF 100%);
+
+    }
+
+    .hex {
+        grid-area: 1/1;
+        width: var(--s);
+        aspect-ratio: 0.866;
+        object-fit: cover;
+        clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0);
+        transform: translate(var(--_x, 0), var(--_y, 0)) scale(var(--_t, 1));
+        cursor: pointer;
+        filter: grayscale(80%);
+        transition: .2s linear;
+        background-color: #27272a;
+    }
+
+    .hex:hover {
+        filter: grayscale(0);
+        z-index: 1;
+        --_t: 1.2;
+    }
 }

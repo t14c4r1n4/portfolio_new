@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
     <div className="w-full fixed top-0 z-40 bg-zinc-900">
       <div className="w-screen flex flex-row ">
-        <nav className="text-cyan-500">
+        <nav className="text-cyan-500 ">
           <ul className="flex flex-row w-screen justify-center">
             {nav_items.map((page, index) => (
               <li className="my-3 px-4 py-2 nav-item" key={index}>
