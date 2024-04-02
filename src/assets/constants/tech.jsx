@@ -6,7 +6,7 @@ import { DiBootstrap } from "react-icons/di";
 import { BiLogoTailwindCss } from "react-icons/bi";
 import { BiLogoJavascript } from "react-icons/bi";
 import { BiLogoGit } from "react-icons/bi";
-import { BsUbuntu } from "react-icons/bs";
+import { BsUbuntu, BsWindows } from "react-icons/bs";
 import { BiLogoSass } from "react-icons/bi";
 import { BiLogoWordpress } from "react-icons/bi";
 import { FaShopware } from "react-icons/fa";
@@ -39,22 +39,16 @@ const technologies = [
     name: "python",
     icon: <DiPython />
   },
-  {
-    name: "bootstrap",
-    icon: <DiBootstrap />
-  },
-  {
-    name: "git",
-    icon: <BiLogoGit />
-  },
-  {
-    name: "github",
-    icon: <FaGithub />
-  },
-  {
-    name: "linkedin",
-    icon: <BiLogoLinkedin />
-  },
+
+ 
+  // {
+  //   name: "github",
+  //   icon: <FaGithub />
+  // },
+  // {
+  //   name: "linkedin",
+  //   icon: <BiLogoLinkedin />
+  // },
   {
     name: "mysql",
     icon: <DiMysql />
@@ -64,8 +58,8 @@ const technologies = [
     icon: <BsUbuntu />
   },
   {
-    name: "sass",
-    icon: <BiLogoSass />
+    name: "windows",
+    icon: <BsWindows />
   },
   {
     name: "wordpress",
@@ -82,7 +76,19 @@ const technologies = [
   {
     name: "tailwind",
     icon: <BiLogoTailwindCss />
-  }
+  },
+  {
+    name: "bootstrap",
+    icon: <DiBootstrap />
+  },
+  {
+    name: "sass",
+    icon: <BiLogoSass />
+  },
+  {
+    name: "git",
+    icon: <BiLogoGit />
+  },
 ];
 
 export { technologies, iconProps };

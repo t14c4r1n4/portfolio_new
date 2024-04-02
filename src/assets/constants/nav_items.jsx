@@ -9,7 +9,7 @@ import {
   
 import Hero from '../sections/hero';
 import About from '../sections/about';
-import Tech from '../sections/technologies_v1';
+import Tech from '../sections/technologies';
 import Lang from '../sections/languages';
 import Timeline from '../sections/timeline';
 import Contact from '../sections/contact';
