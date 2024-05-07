@@ -3,106 +3,219 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: 'Breve';
-    src: url('./assets/fonts/BreveSc-a1zR.ttf');
-}
-
-@font-face {
-    font-family: 'Orbitron';
-    src: url('./assets/fonts/Orbitron-VariableFont_wght.ttf');
-}
-
-@font-face {
-    font-family: 'Lixdu';
-    src: url('./assets/fonts/Lixdu-p7Pn1.ttf');
-}
-
-@font-face {
-    font-family: 'ProPixie';
-    src: url('./assets/fonts/ProcrastinatingPixie-WyVOO.ttf');
+  font-family: "Orbitron";
+  src: url("./assets/fonts/Orbitron-VariableFont_wght.ttf");
 }
 
 @keyframes progress {
-    from {
-        transform: scaleX(0);
-    }
+  from {
+    transform: scaleX(0);
+  }
 
-    to {
-        transform: scaleX(1);
-    }
+  to {
+    transform: scaleX(1);
+  }
 }
 
-@layer utilities {
-    .clip-circle {
-        clip-path: circle(50% at 50% 50%);
-    }
+@layer components {
+  .clip-circle {
+    clip-path: circle(50% at 50% 50%);
+  }
 
-    .clip-triangle {
-        clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-    }
+  .clip-triangle {
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  }
 
-    .glass {
-        background: rgba(255, 255, 255, 0.05);
-        /* border-radius: 16px; */
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-        backdrop-filter: blur(6.8px);
-        -webkit-backdrop-filter: blur(6.8px);
-    }
+  .glass {
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.8px);
+    -webkit-backdrop-filter: blur(6.8px);
+  }
 
-    .text-gradient {
-        background: #04A56A;
-        background: linear-gradient(to left, #04A56A 0%, #FF00D6 100%);
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
+  .progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transform-origin: left center;
+    background-color: lightgrey;
+    animation: linear progress forwards;
+    animation-timeline: scroll(root block);
+  }
 
-    .progress {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        transform-origin: left center;
-        background-color: lightgrey;
-        animation: linear progress forwards;
-        animation-timeline: scroll(root block);
-    }
+  /* Hexagonal Shape as Background for TechIcons */
+  .hex {
+    grid-area: 1/1;
+    width: var(--s);
+    aspect-ratio: 0.866;
+    object-fit: cover;
+    clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0);
+    transform: translate(var(--_x, 0), var(--_y, 0)) scale(var(--_t, 1));
+    cursor: pointer;
+    transition: 0.2s linear;
+  }
 
-    .hue-bg {
-        background: #8A2387;
-        /* fallback for old browsers */
-        background: -webkit-linear-gradient(to right, #F27121, #E94057, #8A2387);
-        /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to right, #F27121, #E94057, #8A2387);
-        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    }
+  .hex:hover {
+    z-index: 1;
+    --_t: 1.2;
+  }
 
-    .hue-txt {
-        color: linear-gradient(to right, #F27121, #E94057, #8A2387)
-    }
+  .divider {
+    height: 250px;
+    min-height: 1em;
+    width: 1px;
+    align-self: stretch;
+    background-image: linear-gradient(
+      to top right,
+      transparent,
+      #a5a5a5,
+      transparent
+    );
+    opacity: 0.25;
+  }
 
-    .gradient_2 {
-        background-color: #00DBDE;
-        background-image: linear-gradient(27deg, #00DBDE 0%, #FC00FF 100%);
+  .dark .divider {
+    background-image: linear-gradient(
+      to top right,
+      transparent,
+      #8c8c8c,
+      transparent
+    );
+  }
 
-    }
+  .tooltip {
+    visibility: hidden;
+    position: absolute;
+    border-radius: 50;
+  }
+  .has-tooltip:hover .tooltip {
+    visibility: visible;
+    z-index: 100;
+  }
 
-    .hex {
-        grid-area: 1/1;
-        width: var(--s);
-        aspect-ratio: 0.866;
-        object-fit: cover;
-        clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0);
-        transform: translate(var(--_x, 0), var(--_y, 0)) scale(var(--_t, 1));
-        cursor: pointer;
-        filter: grayscale(80%);
-        transition: .2s linear;
-        background-color: #27272a;
-    }
+  /* Navbar Hover-Effect */
+  nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
 
-    .hex:hover {
-        filter: grayscale(0);
-        z-index: 1;
-        --_t: 1.2;
-    }
+  nav ul li {
+    margin: 0 20px;
+    transition: 0.5s;
+  }
+
+  nav ul li a {
+    display: block;
+    position: relative;
+    padding: 5px;
+    text-transform: uppercase;
+    transition: 0.5s;
+  }
+
+  nav ul:hover li a {
+    transform: scale(1.5);
+    opacity: 0.2;
+    filter: blur(5px);
+  }
+
+  nav ul li a:hover {
+    transform: scale(2);
+    opacity: 1;
+    filter: blur(0);
+  }
+
+  nav ul li a:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    transition: 0.5s;
+    transform-origin: right;
+    transform: scaleX(0);
+    z-index: -1;
+  }
+
+  nav ul li a:hover:before {
+    transition: transform 0.5s;
+    transform-origin: left;
+    transform: scaleX(1);
+  }
+
+  .nav-active {
+    text-decoration: underline;
+    text-decoration-thickness: 6px;
+    text-decoration-color: #075985;
+    text-underline-position: under;
+    font-size: larger;
+    font-stretch: extra-expanded;
+  }
+
+  .keywords {
+    font-weight: 500;
+    font-size: larger;
+    color: #C084FC;
+  }
+
+  input,
+  textarea {
+    display: block;
+    border-radius: 0.5rem;
+    border-width: 1px;
+    width: 100%;
+    min-height: 2.5rem;
+    appearance: none;
+    background-color: #18181b;
+    padding: 1rem;
+  }
+
+  .form-group {
+    margin-top: 30px;
+  }
+
+  .form-label {
+    left: 0;
+    top: 10px;
+    color: #d4d4d8;
+    padding-left: 1rem;
+    z-index: 10;
+    transition: transform 150ms ease-out, font-size 150ms ease-out;
+  }
+  .form-submit {
+    margin-top: 1rem;
+    background-color: #27272a;
+  }
+
+  .form-submit:hover {
+    background-color: #3b0764;
+  }
+
+  .form-input {
+    position: relative;
+    padding: .75rem 0px .75rem 1rem;
+    outline: 0;
+    border: 0;
+    box-shadow: 0 1px 0 0 #e5e5e5;
+  }
+
+  .form-input:hover {
+    background-color: #71717A;
+  }
+
+  .form-input:focus {
+    box-shadow: 0 2px 0 0 #7e22ce;
+  }
+
+  ::placeholder {
+    padding-left: 2rem;
+    opacity: 50;
+  }
+
+  ::placeholder:focus {
+    opacity: 0;
+  }
 }

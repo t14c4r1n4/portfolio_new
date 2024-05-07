@@ -1,20 +1,23 @@
-import me from '../images/me_circle.png'
 
 const Hero = () => {
   return (
     <>
-      <div className="flex">
-        <div className="text-center">
-          <h3>Hi, i'm Carina.</h3>
-          <p className="py-4">I'm a web developer with a passion for the latest web trends and technologies. I love learning new techniques and languages to create beautiful, functional websites. </p>
-          <p>Explore my work and let's shape the future of the web together. If you're interested in collaborating or simply want to discuss the latest developments in the web, I'm here for you. </p>
-          <p>Let's work together in shaping the future of the internet!</p><br />
-          <p className="font-extrabold from-neutral-600 to-lime-600">Thank you for visiting, and enjoy exploring my projects.
-          </p>
-        </div>
-        <aside><img src={me} className="clip-circle glass float-right"></img></aside>
-      </div>
+      <div className="text-sm pt-10 text-center">They call me 
+      <h3 className="text-5xl pb-10 indent-8 font-Orbitron text-purple-700">
+        Carina <br /> Arnold
+      </h3>
 
+      <p className="tracking-wide text-lg p-5 leading-relaxed m-10">
+        I love to create modern, functional websites with minimalistic design.
+      </p>
+      <a
+        className="p-5 bg-gradient-to-br from-purple-400 via-purple-700 to-purple-500 hover:from-orange-400 hover:via-orange-700 hover:to-orange-500 inline-block text-transparent bg-clip-text text-5xl pb-2"
+        href="#contact"
+      >
+        Contact me now
+      </a>
+      <p className="text-lg">and tell me about your project.</p></div>
+      
     </>
   );
 };

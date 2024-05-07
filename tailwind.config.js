@@ -5,15 +5,11 @@ export default {
   ],
   theme: {
     extend: {
-      // listStyleType: {
-      //   none: 'none',
-      //   disk: 'disk'
-      // },
       fontFamily: {
         Orbitron: ['Orbitron'],
-        Breve: ['Breve'],
-        ProPixie: ['ProPixie'],
-        Lixdu: ['Lixdu']
+      },
+      container: {
+        center: true,
       },
     },
   },

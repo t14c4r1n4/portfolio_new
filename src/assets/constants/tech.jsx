@@ -13,82 +13,70 @@ import { FaShopware } from "react-icons/fa";
 import { BiLogoReact } from "react-icons/bi";
 
 const iconProps = {
-  xmlns: "http://www.w3.org/2000/svg",
-  viewBox: "0 0 24 24",
-  stroke: "currentColor",
-  fill: "none",
   className:
-    "w-10 h-10 transition-transform duration-300 transform group-hover:scale-105 stroke-purple-700",
-  width:"{20}"
+    "size-10 transition-transform duration-300 group-hover:scale-115 group-hover:opacity-100 opacity-50 fill-purple-800 rounded-2xl",
 };
+
+
 
 const technologies = [
   {
-    name: "html",
-    icon: <DiHtml5 />
-  },
-  {
-    name: "css",
-    icon: <DiCss3 />
-  },
-  {
-    name: "javascript",
-    icon: <BiLogoJavascript />
-  },
-  {
-    name: "python",
-    icon: <DiPython />
-  },
-
- 
-  // {
-  //   name: "github",
-  //   icon: <FaGithub />
-  // },
-  // {
-  //   name: "linkedin",
-  //   icon: <BiLogoLinkedin />
-  // },
-  {
-    name: "mysql",
-    icon: <DiMysql />
-  },
-  {
     name: "ubuntu",
-    icon: <BsUbuntu />
+    icon: <BsUbuntu {...iconProps}/>
   },
   {
     name: "windows",
-    icon: <BsWindows />
-  },
-  {
-    name: "wordpress",
-    icon: <BiLogoWordpress />
-  },
-  {
-    name: "shopware",
-    icon: <FaShopware />
-  },
-  {
-    name: "react",
-    icon: <BiLogoReact />
-  },
-  {
-    name: "tailwind",
-    icon: <BiLogoTailwindCss />
-  },
-  {
-    name: "bootstrap",
-    icon: <DiBootstrap />
-  },
-  {
-    name: "sass",
-    icon: <BiLogoSass />
+    icon: <BsWindows {...iconProps}/>
   },
   {
     name: "git",
-    icon: <BiLogoGit />
+    icon: <BiLogoGit {...iconProps}/>
   },
+  {
+    name: "html",
+    icon: <DiHtml5 {...iconProps}/>
+  },
+  {
+    name: "css",
+    icon: <DiCss3 {...iconProps}/>
+  },
+  {
+    name: "javascript",
+    icon: <BiLogoJavascript {...iconProps}/>
+  },
+  {
+    name: "react",
+    icon: <BiLogoReact {...iconProps}/>
+  },
+  {
+    name: "python",
+    icon: <DiPython {...iconProps}/>
+  },
+  {
+    name: "mysql",
+    icon: <DiMysql {...iconProps}/>
+  },
+  {
+    name: "wordpress",
+    icon: <BiLogoWordpress {...iconProps}/>
+  },
+  {
+    name: "shopware",
+    icon: <FaShopware {...iconProps}/>
+  },
+  {
+    name: "tailwind",
+    icon: <BiLogoTailwindCss {...iconProps}/>
+  },
+  {
+    name: "bootstrap",
+    icon: <DiBootstrap {...iconProps}/>
+  },
+  {
+    name: "sass",
+    icon: <BiLogoSass {...iconProps}/>
+  }
+
 ];
 
 export { technologies, iconProps };

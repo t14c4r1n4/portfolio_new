@@ -1,4 +1,4 @@
-import languages from '../constants/lang';
+import languages from "../constants/lang";
 
 export default function Lang() {
   const langImages = languages.map((lang) => (
@@ -13,19 +13,14 @@ export default function Lang() {
 
   return (
     <>
-      <div className="flex flex-wrap justify-center gap-2 mt-14">
-        {langImages.map((langImage, index) => (
-          <article
-            className="p-2 mb-2  transition duration-300 group transform hover:-translate-y-2 hover:shadow-2xl rounded-2xl cursor-pointer"
-            key={index}
-          >
-            <div className="relative rounded-2xl">
-              {langImage}
-            </div>
-          </article>
-        ))}
-      </div>
+      {langImages.map((langImage, index) => (
+        <article
+          className="p-2 mb-2  transition duration-300 group transform hover:-translate-y-2 hover:shadow-2xl rounded-2xl cursor-pointer"
+          key={index}
+        >
+          <div className="relative rounded-2xl">{langImage}</div>
+        </article>
+      ))}
     </>
   );
 }
-

@@ -1,4 +1,4 @@
-import background from "../../public/images/index";
+import background from "../../public/";
  
 const bg_image = ()=> {
   return (

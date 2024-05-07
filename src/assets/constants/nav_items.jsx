@@ -2,7 +2,6 @@ import {
     HomeIcon,
     UserIcon,
     CodeBracketIcon,
-    LanguageIcon,
     AcademicCapIcon,
     ChatBubbleLeftRightIcon
   } from "@heroicons/react/24/outline";
@@ -10,9 +9,8 @@ import {
 import Hero from '../sections/hero';
 import About from '../sections/about';
 import Tech from '../sections/technologies';
-import Lang from '../sections/languages';
 import Timeline from '../sections/timeline';
-import Contact from '../sections/contact';
+import Contact from '../sections/contactnew';
 
   const nav_items = [
     {
@@ -39,18 +37,10 @@ import Contact from '../sections/contact';
       icon: <CodeBracketIcon width={30}/>,
       section: <Tech />
     },
-    // {
-    //   id: 'tools',
-    //   alt: 'Tools and Technologies',
-    //   name: 'Tools and Technologies',
-    //   href: '/#tech',
-    //   icon: <CodeBracketIcon width={30}/>,
-    //   section: <Tech />
-    // },
     {
       id: 'timeline',
       alt: 'My career path',
-      name: 'Work Experience',
+      name: 'Work XP',
       href: '/#timeline',
       icon: <AcademicCapIcon width={30}/>,
       section: <Timeline />
