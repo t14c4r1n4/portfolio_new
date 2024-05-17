@@ -99,6 +99,7 @@
     margin: 0;
     padding: 0;
     display: flex;
+    color: #d8b4fe ;
   }
 
   nav ul li {
@@ -211,7 +212,7 @@
   }
 
   ::placeholder {
-    padding-left: 2rem;
+    padding-left: 4px;
     opacity: 50;
   }
 

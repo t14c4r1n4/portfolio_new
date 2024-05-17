@@ -14,7 +14,7 @@ import { BiLogoReact } from "react-icons/bi";
 
 const iconProps = {
   className:
-    "size-10 transition-transform duration-300 group-hover:scale-115 group-hover:opacity-100 opacity-50 fill-purple-800 rounded-2xl",
+    "size-10 transition-transform duration-300 group-hover:scale-115 group-hover:opacity-100 opacity-50 fill-purple-500 rounded-2xl",
 };
 
 
