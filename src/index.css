@@ -99,12 +99,12 @@
     margin: 0;
     padding: 0;
     display: flex;
-    color: #d8b4fe ;
   }
 
   nav ul li {
-    margin: 0 20px;
+    margin: 0 10px;
     transition: 0.5s;
+    color: #6B21A8;
   }
 
   nav ul li a {
@@ -158,8 +158,8 @@
 
   .keywords {
     font-weight: 500;
-    font-size: larger;
-    color: #C084FC;
+    font-size: large;
+    color: #9333EA;
   }
 
   input,

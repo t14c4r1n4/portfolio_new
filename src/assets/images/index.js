@@ -19,13 +19,9 @@ import wbs from './companies/wbs.png'
 import db from './companies/db.svg'
 
 // background
-import background from './others/background.png'
 import bg from './bg.svg'
-import bg_concrete from './bg_concrete.jpg'
-import hue_bg from './hue_bg.jpg'
 
 // me
-import me from './others/me.png'
 import me_circle from './me_circle.png'
 
 export {
@@ -41,12 +37,9 @@ export {
     zoll,
     klett,
     wbs,
-    background,
-    me,
     me_circle,
     db,
     bg, 
-    hue_bg
 }
 
 export default bg;

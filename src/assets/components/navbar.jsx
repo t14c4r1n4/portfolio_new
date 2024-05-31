@@ -1,7 +1,5 @@
 import React, { createRef, useRef, useState } from "react";
 import nav_items from "../constants/nav_items";
-import ScrollSpy from "react-scrollspy-navigation";
-import scrollPosition from "react-scrollspy-navigation"
 
 const Navbar = () => {
   return (
@@ -10,7 +8,6 @@ const Navbar = () => {
       <nav className="w-screen h-[10vh]">
 
         <ul className="flex flex-row place-content-center space-between">
-          <ScrollSpy activeClass="nav-active" scrollTargetIds={nav_items.map(item => item.id)}>
             {nav_items.map((page, index) => (
               <li className="py-[2vh]" key={index} ref={createRef()}>
                 {/* Mobile View - Icons*/}
@@ -30,7 +27,6 @@ const Navbar = () => {
                 </a>
               </li>
             ))}
-          </ScrollSpy>
         </ul>
 
       </nav>
