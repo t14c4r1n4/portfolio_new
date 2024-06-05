@@ -25,7 +25,7 @@ export default function Tech() {
   ));
 
   return (
-    <div className="flex flex-wrap justify-center gap-2 p-5 rounded-2xl max-w-[40vw]">
+    <div className="flex flex-wrap justify-center gap-2 p-3 rounded-2xl max-w-[70vw]">
       {icons}
     </div>
   );

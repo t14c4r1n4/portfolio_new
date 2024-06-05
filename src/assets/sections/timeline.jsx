@@ -44,7 +44,7 @@ const Timeline = () => {
 
   return (
 
-      <ol className="border-l-2 border-cyan-600 m-6 ">{list}</ol>
+      <ol className="border-l-2 border-cyan-600 m-6">{list}</ol>
 
   );
 };

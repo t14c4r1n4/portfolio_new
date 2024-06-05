@@ -39,7 +39,7 @@ export default function Footer() {
             </i>
             {activeIndex === 1 && <span className="-translate-y-28 absolute -translate-x-12 text-zinc-800 mx-5 align-center justify-center z-10 bg-purple-600 rounded-lg p-3 overflow-auto">github:<br />t14c4r1n4</span>}
           </a>
-          <a href="" className={`${activeIndex === 2 ? "active" : ""} pl-3 relative`}
+          <a href="https://www.linkedin.com/in/carina-webdev/" className={`${activeIndex === 2 ? "active" : ""} pl-3 relative`}
             onMouseEnter={() => setActiveIndex(2)}
             onMouseLeave={() => setActiveIndex(false)}>
             <i className="group flex justify-center rounded-full drop-shadow-xl">
