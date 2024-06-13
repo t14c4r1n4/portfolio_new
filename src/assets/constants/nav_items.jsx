@@ -2,6 +2,7 @@ import {
     HomeIcon,
     UserIcon,
     CodeBracketIcon,
+    BriefcaseIcon,
     AcademicCapIcon,
     ChatBubbleLeftRightIcon
   } from "@heroicons/react/24/outline";
@@ -9,7 +10,8 @@ import {
 import Hero from '../sections/hero';
 import About from '../sections/about';
 import Tech from '../sections/technologies';
-import Timeline from '../sections/timeline';
+import XpTimeline from '../sections/xptimeline';
+import EduTimeline from '../sections/edutimeline';
 import Contact from '../sections/contactnew';
 
 const iconProps = {
@@ -43,14 +45,23 @@ const iconProps = {
       section: <Tech />
     },
     {
+      id: 'education',
+      alt: 'My education path',
+      name: 'Education',
+      href: '/#edutimeline',
+      icon: <AcademicCapIcon {...iconProps}/>,
+      section: <EduTimeline />
+
+    },
+    {
       id: 'timeline',
       alt: 'My career path',
       name: 'Work XP',
-      href: '/#timeline',
-      icon: <AcademicCapIcon {...iconProps}/>,
-      section: <Timeline />
+      href: '/#xptimeline',
+      icon: <BriefcaseIcon {...iconProps}/>,
+      section: <XpTimeline />
     },
-    {
+        {
       id: 'contact',
       alt: 'How to get in contact',
       name: 'Contact',

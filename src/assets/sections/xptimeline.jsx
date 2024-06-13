@@ -8,7 +8,7 @@ const Accordion_Button = ({ active }) => (
   </button>
 );
 
-const Timeline = () => {
+const XpTimeline = () => {
   const [activeIndex, setActiveIndex] = useState(null);
 
   const list = careerEvents.map((e, index) => (
@@ -49,4 +49,4 @@ const Timeline = () => {
   );
 };
 
-export default Timeline;
+export default XpTimeline;

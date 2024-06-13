@@ -16,7 +16,7 @@ const careerEvents = [
         company: "Deutsche Bahn AG",
         location: "Germany, Regensburg",
         icon: db,
-        description: ["subscription management", "end-users Instruction for our applications", "collaboration and consultant for digital marketing and UX"]
+        description: ["Subscription management", "End-users Instruction for our applications", "Collaboration and consultant for digital marketing and UX"]
     },
     {
         date: "2022-09 - now",
@@ -24,7 +24,7 @@ const careerEvents = [
         company: "Boulderwelt GmbH",
         location: "Germany, Regensburg",
         icon: bwr,
-        description: ["consulting service", "instruction for new customers", "plant care"]
+        description: ["Consulting service", "Instruction for new customers", "Plant care"]
     },
     {
         date: "2019-04 - 2021-06",
@@ -32,7 +32,7 @@ const careerEvents = [
         company: "Adolf Würth GmbH & Co. KG",
         location: "Germany, Landshut",
         icon: wuerth,
-        description: ["product presentation and sales", "regional marketing campaign", "customer support and service"]
+        description: ["Product presentation and sales", "Regional marketing campaigns", "Customer support and service"]
     },
     {
         date: "2018-10 - 2019-03",
@@ -40,7 +40,7 @@ const careerEvents = [
         company: "New Yorker Fashion",
         location: "Germany, Landshut",
         icon: nyf,
-        description: ["product presentation and sales", "customer support and service"]
+        description: ["Product presentation and sales", "Customer support and service"]
     },
     {
         date: "2017-07 - 2018-09",
@@ -48,7 +48,7 @@ const careerEvents = [
         company: "Wittmann Recycling GmbH",
         location: "Germany, Ergolding",
         icon: wittmann,
-        description: ["offer management", "management of customer inquiries", "consultant for problems with office-hardware"]
+        description: ["Offer management", "Management of customer inquiries", "Consultant for problems with office-hardware"]
     },
     {
         date: "2013-10 - 2017-02",
@@ -56,7 +56,7 @@ const careerEvents = [
         company: "County Office Landshut",
         location: "Germany, Landshut",
         icon: lra,
-        description: ["application of legal regulations", "health assistance"]
+        description: ["Application of legal regulations", "Health assistance"]
     },
     {
         date: "2012-10 - 2013-06",
