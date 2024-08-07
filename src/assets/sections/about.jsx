@@ -3,7 +3,8 @@ import me from "../images/me_circle.png";
 import { ChevronDownIcon, ChevronUpIcon } from "@heroicons/react/24/outline";
 
 const AccordionButton = ({ active, onClick }) => (
-  <button type="button" className="mx-auto text-purple-500" onClick={onClick}>... Read more ...
+  <button type="button" className="mx-auto text-purple-500 flex flex-row" onClick={onClick}>
+    {!active && "Read more ..."}
     {active ? <ChevronUpIcon className="w-6 h-6" /> : <ChevronDownIcon className="w-6 h-6" />}
   </button>
 );
