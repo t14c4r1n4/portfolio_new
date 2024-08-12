@@ -66,22 +66,18 @@
     min-height: 1em;
     width: 1px;
     align-self: stretch;
-    background-image: linear-gradient(
-      to top right,
-      transparent,
-      #a5a5a5,
-      transparent
-    );
+    background-image: linear-gradient(to top right,
+        transparent,
+        #a5a5a5,
+        transparent);
     opacity: 0.25;
   }
 
   .dark .divider {
-    background-image: linear-gradient(
-      to top right,
-      transparent,
-      #8c8c8c,
-      transparent
-    );
+    background-image: linear-gradient(to top right,
+        transparent,
+        #8c8c8c,
+        transparent);
   }
 
   .tooltip {
@@ -89,6 +85,7 @@
     position: absolute;
     border-radius: 50;
   }
+
   .has-tooltip:hover .tooltip {
     visibility: visible;
     z-index: 100;
@@ -186,6 +183,7 @@
     z-index: 10;
     transition: transform 150ms ease-out, font-size 150ms ease-out;
   }
+
   .form-submit {
     margin-top: 1rem;
     background-color: #27272a;
@@ -219,4 +217,34 @@
   ::placeholder:focus {
     opacity: 0;
   }
+
+  .Modal {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    right: 40px;
+    bottom: 40px;
+    background-color: #3F3F46;
+    padding: 30px 10px 10px 10px;
+    color: #D4D4D8;
+    overflow-y: auto;
+    /* Ermöglicht das Scrollen im Modal */
+    max-height: 80vh;
+    /* Begrenzung der Höhe des Modals */
+    border-radius: 8px;
+    /* Abgerundete Ecken */
+  }
+
+  .Overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(39, 39, 42, 0.85);
+    /* Halbtransparentes Overlay */
+    z-index: 999;
+    /* Sicherstellen, dass das Overlay über allem liegt */
+  }
+
 }

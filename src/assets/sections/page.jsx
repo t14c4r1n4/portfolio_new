@@ -20,6 +20,7 @@ const Page = () => {
           </div>
         </div>
       ))}
+      <button>Scroll to top</button>
     </div>
   );
 };
