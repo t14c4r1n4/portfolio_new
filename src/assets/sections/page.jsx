@@ -1,5 +1,6 @@
 import React from "react";
 import nav_items from "../constants/nav_items";
+import ToTopButton from "../components/scrollToTop";
 
 
 const Page = () => {
@@ -21,7 +22,7 @@ const Page = () => {
           </div>
         </div>
       ))}
-      <button>Scroll to top</button>
+      <ToTopButton />
     </div>
   );
 };
