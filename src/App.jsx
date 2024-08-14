@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import Page from "./assets/sections/page";
 import Footer from "./assets/components/footer";
 import Navbar from "./assets/components/navbar";
+import { Analytics } from "@vercel/analytics/react"
 
 import "./index.css";
 
@@ -17,8 +18,9 @@ function App() {
   // if render is true, Component will be rendered
   return render ? (
     <div className="bg-zinc-900 bg-norepeat bg-[url('./src/assets/images/bg.svg')] text-zinc-300">
+      <Analytics />
       <Navbar />
-      <Page/>
+      <Page />
       <Footer />
     </div>
   ) : null;
